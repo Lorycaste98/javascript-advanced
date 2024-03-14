@@ -23,7 +23,8 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './index.html',
+            filename: path.resolve(__dirname, './index.html'),
+            template: './src/index.html',
         }),
 
         // Add your plugins here
